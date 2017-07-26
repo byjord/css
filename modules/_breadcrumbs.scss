@@ -1,0 +1,23 @@
+.breadcrumb {
+	@include clearfix;
+	border-bottom: 1px solid $gray-lighter;
+	padding: 10px 0;
+	 li {
+		float: left;
+		list-style: none;
+		margin-right: 5px;
+		font-size: 12px;
+		
+		&+li:before {
+		  content: "/\00a0";
+		  padding: 0 5px;
+		  color: #ccc;
+		}
+		
+		&+li.pull-right:before {
+		  content: " ";
+		  padding: 0;
+		}
+		
+	}
+}

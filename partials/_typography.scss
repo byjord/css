@@ -1,0 +1,95 @@
+body {
+	font-size: 24px;
+	line-height: 1.618;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, {
+	margin-top: 1.5rem;
+	margin-bottom: 0;
+	line-height: 1.5rem;
+	line-height: 1.618;
+}
+
+//
+//	Keep the headings near their first child paragraph
+//
+h1 + p,
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p
+{ margin-top: 0px; }
+
+.type-dramatic { font-size: 3rem; }
+h1,.type-xlarge { font-size: 2.5rem; }
+h2,.type-large { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+h4,.type-medium { font-size: 1.17rem; }
+h5,h6,.type-small { font-size: 1.12rem; }
+.type-xsmall { font-size: .83rem; }
+
+.form-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: $brand-black;
+    background: $brand-secondary;
+}
+::selection {
+    color: $brand-black;
+    background: $brand-secondary;
+}
+
+a {
+	color: $brand-primary;
+	&:hover {
+		color: darken($brand-primary, 13.5%);
+	}
+	&:active {
+		color: darken($brand-primary, 13.5%);
+	}
+}
+
+a:not(.no-underline) {
+    text-decoration: none;
+    background: -webkit-linear-gradient(#fff,#fff),-webkit-linear-gradient(#fff,#fff),-webkit-linear-gradient($brand-primary,$brand-primary);
+    background: -moz-linear-gradient(#fff,#fff),-moz-linear-gradient(#fff,#fff),-moz-linear-gradient($brand-primary,$brand-primary);
+    background: -o-linear-gradient(#fff,#fff),-o-linear-gradient(#fff,#fff),-o-linear-gradient($brand-primary,$brand-primary);
+    background: -ms-linear-gradient(#fff,#fff),-ms-linear-gradient(#fff,#fff),-ms-linear-gradient($brand-primary,$brand-primary);
+    -webkit-background-size: .05em 1px,.05em 1px,1px 1px;
+    -moz-background-size: .05em 1px,.05em 1px,1px 1px;
+    background-size: .05em 1px,.05em 1px,1px 1px;
+    background-repeat: no-repeat,no-repeat,repeat-x;
+    text-shadow: .03em 0 #fff,-.03em 0 #fff,0 .03em #fff,0 -.03em #fff,.06em 0 #fff,-.06em 0 #fff,.09em 0 #fff,-.09em 0 #fff,.12em 0 #fff,-.12em 0 #fff,.15em 0 #fff,-.15em 0 #fff;
+    background-position: 0 87%,100% 87%,0 87%;
+}
+
+ul:not(.no-list-styles), ol:not(.no-list-styles)
+{
+   li {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+ul.bottom-spacer, ol.bottom-spacer
+{
+   li {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

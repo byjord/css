@@ -1,0 +1,34 @@
+body {
+	padding:40px;
+}
+
+header {
+	&.main {
+		position: fixed;
+		font-size: 12px;
+		top:0;
+		left: 0;
+
+		padding: 40px;
+		padding-right: 0;
+		padding-bottom: 0;
+		h1 {
+			font-weight: normal;
+			padding: 0; margin: 0;
+			a {
+			    color: $brand-black;
+			    position: relative;
+			    border-bottom: 1px solid;
+			    text-decoration: none;
+			}
+		}
+		nav {
+			font-style: italic;
+			a {
+			    color: $brand-black;
+			    text-decoration: none;
+
+			}
+		}
+	}
+}

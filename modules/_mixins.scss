@@ -1,0 +1,38 @@
+// Brand Colours
+$brand-black: #404040;
+$brand-primary: #0c7cff;
+$brand-secondary: #F6FF0C;
+$brand-tertiary: #8E0CFF;
+
+$brand-success: #0f9d58;
+$brand-warning: #f46142;
+
+// Gray's
+$gray-darker:            lighten($brand-black, 13.5%) !default;
+$gray-dark:              lighten($brand-black, 20%) !default;
+$gray:                   lighten($brand-black, 33.5%) !default;
+$gray-light:             lighten($brand-black, 46.7%) !default;
+$gray-lighter:           lighten($brand-black, 60.5%) !default;
+$gray-lightest:          lighten($brand-black, 72.5%) !default;
+
+// Default font
+@mixin typeface {
+    font-family: "Minion Pro", "Palatino Linotype", "Book Antiqua", Georgia, Palatino, serif;
+    color: $brand-black;
+}
+
+@mixin clearfix {
+    // http://nicolasgallagher.com/micro-clearfix-hack/
+    // USAGE: @include clearfix();
+    & {
+        *zoom: 1;
+    }
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
